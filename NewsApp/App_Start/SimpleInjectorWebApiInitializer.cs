@@ -29,9 +29,9 @@ namespace NewsApp.App_Start
      
         private static void InitializeContainer(Container container)
         {
-            //container.Register<NewsContext>(Lifestyle.Scoped);
-            //container.Register<IArticleRepository, ArticleRepository>(Lifestyle.Scoped);
-            
+            container.Register<NewsContext>(Lifestyle.Scoped);
+            container.Register<IArticleRepository, ArticleRepository>(Lifestyle.Scoped);
+
         }
     }
 }

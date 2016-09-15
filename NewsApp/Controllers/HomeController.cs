@@ -20,36 +20,7 @@ namespace NewsApp.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
-            try
-            {
-                _articleRepository.Add(new Article
-                {
-                    Title = "tiele",
-                    Body = "body",
-                    Likes = 1,
-                    PublishDate = DateTime.Now,
-                    Comments = new List<Comment>
-                    {
-                        new Comment
-                        {
-                            Text = "hello",
-                        },
-                        new Comment
-                        {
-                            Text = "sdf"
-                        }
-                    }
-                });
-                _articleRepository.SaveChanges();
-            }
-            catch (Exception e)
-            {
-                
-                throw new Exception(e.Message);
-            }
-            var articles = _articleRepository.GetAll();
-
-            return View(articles);
+            return View();
         }
     }
 }
