@@ -65,8 +65,24 @@ namespace NewsApp.Controllers
         }
 
         
-        public void Put(int id, [FromBody]string value)
+        public IHttpActionResult Put([FromBody]Article article)
         {
+            if (article == null)
+            {
+                return BadRequest();
+            }
+
+            try
+            {
+                if (_articleRepository.Get(article.Id) != null) return NotFound();
+                _articleRepository.Update(article);
+                _articleRepository.SaveChanges();
+                return Ok(article);
+            }
+            catch (Exception)
+            {
+                return InternalServerError();
+            }
         }
 
         
