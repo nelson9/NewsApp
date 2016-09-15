@@ -30,7 +30,7 @@ namespace NewsApp.Controllers
                 return InternalServerError();
             }
         }
-     
+
         public IHttpActionResult Get(int id)
         {
             try
@@ -56,15 +56,15 @@ namespace NewsApp.Controllers
             {
                 _articleRepository.Add(article);
                 _articleRepository.SaveChanges();
-                return CreatedAtRoute("DefaultApi", new {id = article.Id }, article);
+                return CreatedAtRoute("DefaultApi", new { id = article.Id }, article);
             }
             catch (Exception)
             {
-                return InternalServerError(); 
+                return InternalServerError();
             }
         }
 
-        
+
         public IHttpActionResult Put([FromBody]Article article)
         {
             if (article == null)
@@ -85,9 +85,22 @@ namespace NewsApp.Controllers
             }
         }
 
-        
-        public void Delete(int id)
+
+        public IHttpActionResult Delete(int id)
         {
+            var article = _articleRepository.Get(id);
+            if (article == null) return NotFound();
+            try
+            {
+                _articleRepository.Remove(article);
+                _articleRepository.SaveChanges();
+
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return InternalServerError();
+            }
         }
     }
 }
