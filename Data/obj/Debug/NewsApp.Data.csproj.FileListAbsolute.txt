@@ -10,3 +10,15 @@ C:\Users\nferguson\Desktop\NewsApp\Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\nferguson\Desktop\NewsApp\Data\obj\Debug\NewsApp.Data.csprojResolveAssemblyReference.cache
 C:\Users\nferguson\Desktop\NewsApp\Data\obj\Debug\Data.dll
 C:\Users\nferguson\Desktop\NewsApp\Data\obj\Debug\Data.pdb
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\Data.dll.config
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\Data.dll
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\Data.pdb
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\EntityFramework.dll
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\NewsApp.Models.dll
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\NewsApp.Models.pdb
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\EntityFramework.xml
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\obj\Debug\NewsApp.Data.csprojResolveAssemblyReference.cache
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\obj\Debug\Data.dll
+C:\Users\Niall\Documents\GitHub\NewsApp\Data\obj\Debug\Data.pdb

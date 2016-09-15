@@ -22,5 +22,11 @@ namespace NewsApp.Controllers
             ViewBag.Title = "Home Page";
             return View();
         }
+
+        public ActionResult Publish()
+        {
+            ViewBag.Title = "Publish";
+            return View();
+        }
     }
 }

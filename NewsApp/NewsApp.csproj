@@ -217,24 +217,27 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="content\img\facebook.svg" />
+    <Content Include="content\img\mail.svg" />
+    <Content Include="content\img\menu-cross.svg" />
+    <Content Include="content\img\menu-icon.svg" />
+    <Content Include="content\img\twitter.svg" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
+    <Content Include="gulpfile.js" />
+    <Content Include="scripts\libs\bootstrap.js" />
+    <Content Include="scripts\libs\bootstrap.min.js" />
+    <None Include="scripts\libs\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\libs\jquery-1.10.2.js" />
+    <Content Include="scripts\libs\jquery-1.10.2.min.js" />
+    <None Include="scripts\libs\jquery.validate-vsdoc.js" />
+    <Content Include="scripts\libs\jquery.validate.js" />
+    <Content Include="scripts\libs\jquery.validate.min.js" />
+    <Content Include="scripts\libs\jquery.validate.unobtrusive.js" />
+    <Content Include="scripts\libs\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\libs\modernizr-2.6.2.js" />
+    <Content Include="scripts\libs\respond.js" />
+    <Content Include="scripts\libs\respond.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -242,24 +245,35 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="scripts\libs\_references.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="scss\.DS_Store" />
+    <Content Include="scss\styles.scss" />
+    <Content Include="scss\_base\.DS_Store" />
+    <Content Include="scss\_base\_fonts.scss" />
+    <Content Include="scss\_base\_grid.scss" />
+    <Content Include="scss\_base\_icons.scss" />
+    <Content Include="scss\_base\_reset.scss" />
+    <Content Include="scss\_base\_typography.scss" />
+    <Content Include="scss\_headerfooter\footer.scss" />
+    <Content Include="scss\_headerfooter\header.scss" />
+    <Content Include="scss\_tools\_functions.scss" />
+    <Content Include="scss\_tools\_variables.scss" />
+    <Content Include="Views\Home\Publish.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="content\css\" />
+    <Folder Include="content\js\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="scripts\libs\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\NewsApp.Data.csproj">
